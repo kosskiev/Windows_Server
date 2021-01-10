@@ -1,0 +1,6 @@
+# PowerShell
+Get-Service # Запущеные сервисы
+Get-Service wuauserv - краткая инфа об определенном сервисе(в данном случае wuauserv)
+Get-Service wuauserv | Format-List * - развернутавя инфа о сервисе(в данном случае wuauserv)
+Stop-Service wuauserv - остановить службу, Start - запустить
+StartupType - Disable - нельзя просто запустить службу (нужно изменить свойство службы Set-Service ScardSvr -StartupType Manual)
